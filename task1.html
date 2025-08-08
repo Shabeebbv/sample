@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const orders=[200,450,130,50,1000,20];
+        // console.log(orders)
+
+
+        // orders.forEach((a)=>{
+        // console.log(a)})
+
+
+        // let n=orders.filter(n=>n>100)
+        // console.log(n)
+
+        let m=orders.map(m=>m-10)
+        console.log(m)
+
+        let j=m.reduce((c,a)=> {return c+a})
+        console.log(j)
+
+
+    </script>
+</body>
+</html>

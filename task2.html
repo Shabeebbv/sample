@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products=[{
+    name:"A",
+    price: 200
+},
+{
+    name:"B", 
+    price: 100
+},
+{
+    name:"C", 
+    price: 150
+},
+{
+    name:"B", 
+    price: 200
+}];
+
+products.sort(function w(a,b){
+    return a.price-b.price
+})
+console.log(products)
+let red=products.reduce((a,b)=> a+b.price,0)
+console.log(red)
+
+// w()
+
+//   function srt(a,b){
+//     return a-b
+// }
+// let a= srt(products)
+// console.log(a)
+    </script>
+</body>
+</html>
